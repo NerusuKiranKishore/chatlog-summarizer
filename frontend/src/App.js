@@ -11,8 +11,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [results, setResults] = useState(null);
   const [summaryLength, setSummaryLength] = useState('medium');
-
-  // ── Summarise pasted text ───────────────────────────────────────────────
+  
   const handleSummarize = async () => {
     if (!inputText.trim()) {
       toast.error('Please paste some chat text first.');
