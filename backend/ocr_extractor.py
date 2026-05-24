@@ -2,6 +2,8 @@
 OCR and file extraction utilities.
 Supports: images (PNG, JPG, WEBP) and PDF files.
 """
+import os
+os.environ["TESSDATA_PREFIX"] = "/usr/share/tesseract-ocr/5/tessdata"
 import io
 import re
 from pathlib import Path
